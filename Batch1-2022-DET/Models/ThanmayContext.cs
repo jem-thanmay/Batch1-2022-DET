@@ -40,35 +40,35 @@ namespace Batch1_2022_DET.Models
                 entity.ToTable("EMP");
 
                 entity.Property(e => e.Empno)
-                    .ValueGeneratedNever()
-                    .HasColumnName("EMPNO");
+            .ValueGeneratedNever()
+            .HasColumnName("EMPNO");
 
                 entity.Property(e => e.Comm).HasColumnName("COMM");
 
                 entity.Property(e => e.Deptno).HasColumnName("DEPTNO");
 
                 entity.Property(e => e.Ename)
-                    .HasMaxLength(10)
-                    .IsUnicode(false)
-                    .HasColumnName("ENAME");
+            .HasMaxLength(10)
+            .IsUnicode(false)
+            .HasColumnName("ENAME");
 
                 entity.Property(e => e.Hiredate)
-                    .HasColumnType("date")
-                    .HasColumnName("HIREDATE");
+            .HasColumnType("date")
+            .HasColumnName("HIREDATE");
 
                 entity.Property(e => e.Job)
-                    .HasMaxLength(9)
-                    .IsUnicode(false)
-                    .HasColumnName("JOB");
+            .HasMaxLength(9)
+            .IsUnicode(false)
+            .HasColumnName("JOB");
 
                 entity.Property(e => e.Mgr).HasColumnName("MGR");
 
                 entity.Property(e => e.Sal).HasColumnName("SAL");
 
                 entity.HasOne(d => d.MgrNavigation)
-                    .WithMany(p => p.InverseMgrNavigation)
-                    .HasForeignKey(d => d.Mgr)
-                    .HasConstraintName("EMP_SELF_KEY");
+            .WithMany(p => p.InverseMgrNavigation)
+            .HasForeignKey(d => d.Mgr)
+            .HasConstraintName("EMP_SELF_KEY");
             });
 
             OnModelCreatingPartial(modelBuilder);

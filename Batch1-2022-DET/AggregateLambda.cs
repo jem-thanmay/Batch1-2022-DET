@@ -1,57 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Diagnostics;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace Batch1_2022_DET
-{
-    public class AggregateLambda
-    {
-        public static void Main()
-        {
-            AggregateExample();
-        }
-        private static void AggregateExample()
-        {
-            //1. Aggregate simple example
+//namespace Batch1_2022_DET
+//{
+//    public class AggregateLambda
+//    {
+//        public static void Main()
+//        {
+//            AggregateExample();
+//        }
+//        private static void AggregateExample()
+//        {
+//            //1. Aggregate simple example
 
-             var num = new int[] { 1, 2, 3, 4, 5 };
+//             var num = new int[] { 1, 2, 3, 4, 5 };
 
-            //var outcome = num.Aggregate((x, y) => x * y);
-
-            
-            //2. Average example
-
-            // int[] num = { 12, 12, 13, 14 };
-
-            //var outcome = num.Average();
+//            //var outcome = num.Aggregate((x, y) => x * y);
 
             
-            //3.Count example
+//            //2. Average example
 
-            //string[] words = { "Hermoine", "Harry", "Ron", "Ginny" };
+//            // int[] num = { 12, 12, 13, 14 };
 
-            // var outcome = words.Count();
+//            //var outcome = num.Average();
 
             
-            //4.Min
+//            //3.Count example
 
-            //var outcome = num.Min();
+//            //string[] words = { "Hermoine", "Harry", "Ron", "Ginny" };
 
-            //5.Max
+//            // var outcome = words.Count();
 
-            //var outcome = num.Max();
+            
+//            //4.Min
 
-            //6.Sum
+//            //var outcome = num.Min();
 
-            var outcome = num.Sum();
+//            //5.Max
+
+//            //var outcome = num.Max();
+
+//            //6.Sum
+
+//            var outcome = num.Sum();
 
             
 
            
-            Console.WriteLine(outcome);
-        }
-    }
-}
+//            Console.WriteLine(outcome);
+//        }
+//    }
+//}
